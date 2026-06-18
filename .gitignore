@@ -1,0 +1,33 @@
+# Generated watch packages
+dist/*
+!dist/.gitkeep
+**/build/files/code/*
+**/build/*.wapp
+
+# Local-only knowledge indexes and logs
+.local/
+*.log
+*.tmp
+*.bak
+
+# External repositories and raw archive must stay outside this repo
+_knowledge-archive/
+Fossil-HR-SDK/
+Gadgetbridge/
+jerryscript/
+fossil-hr-gbapps/
+
+# IDE and OS
+.vs/
+.idea/
+.vscode/*.local.json
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Node / Gradle
+node_modules/
+.gradle/
