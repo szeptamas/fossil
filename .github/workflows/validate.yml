@@ -1,0 +1,19 @@
+name: Validate repository
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  repository-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate PowerShell and app manifests
+        shell: pwsh
+        run: ./scripts/test-repository.ps1
