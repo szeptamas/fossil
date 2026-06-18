@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fossil Hybrid HR Simulator</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Fossil Hybrid HR Simulator</h1>
+      <p id="app-status">Loading application…</p>
+    </div>
+    <div class="toolbar">
+      <button id="reload-app" type="button">Reload app</button>
+      <button id="toggle-light" type="button">Light</button>
+      <button id="clear-log" type="button">Clear log</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section class="watch-panel" aria-label="Simulated watch">
+      <div id="watch" class="watch">
+        <div class="watch-case">
+          <div class="crown crown-top"></div>
+          <div class="crown crown-middle"></div>
+          <div class="crown crown-bottom"></div>
+          <div class="display-shell">
+            <canvas id="display" width="240" height="240"></canvas>
+            <canvas id="hands" width="240" height="240"></canvas>
+            <div id="light-overlay" class="light-overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-grid">
+        <div class="button-row">
+          <strong>Top</strong>
+          <button data-event="top_short_press_release" type="button">Short</button>
+          <button data-event="top_press" type="button">Press</button>
+          <button data-event="top_hold" type="button">Hold</button>
+        </div>
+        <div class="button-row">
+          <strong>Middle</strong>
+          <button data-event="middle_short_press_release" type="button">Short</button>
+          <button data-event="middle_press" type="button">Press</button>
+          <button data-event="middle_hold" type="button">Hold</button>
+        </div>
+        <div class="button-row">
+          <strong>Bottom</strong>
+          <button data-event="bottom_short_press_release" type="button">Short</button>
+          <button data-event="bottom_press" type="button">Press</button>
+          <button data-event="bottom_hold" type="button">Hold</button>
+        </div>
+      </div>
+
+      <p class="keyboard-help">
+        Keyboard: ↑ top short, Enter middle short, ↓ bottom short.
+        Hold Shift for hold events.
+      </p>
+    </section>
+
+    <section class="control-panel">
+      <div class="cards">
+        <article class="card">
+          <h2>Lifecycle</h2>
+          <div class="inline-actions">
+            <button data-event="visible" type="button">Visible</button>
+            <button data-event="hidden" type="button">Hidden</button>
+            <button data-event="background" type="button">Background</button>
+            <button data-event="common_update" type="button">Common update</button>
+            <button data-event="double_tap" type="button">Double tap</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Common data</h2>
+          <textarea id="common-json" spellcheck="false"></textarea>
+          <button id="apply-common" type="button">Apply common data</button>
+        </article>
+
+        <article class="card">
+          <h2>Runtime state</h2>
+          <dl class="state-list">
+            <dt>State machine</dt>
+            <dd id="state-name">—</dd>
+            <dt>Hands</dt>
+            <dd id="hand-state">0° / 0°</dd>
+            <dt>Timers</dt>
+            <dd id="timer-count">0</dd>
+            <dt>Last action</dt>
+            <dd id="last-action">—</dd>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h2>Last response</h2>
+          <pre id="response-json">{}</pre>
+        </article>
+
+        <article class="card log-card">
+          <h2>Event and runtime log</h2>
+          <ol id="event-log"></ol>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Source-mode simulator. Final compatibility still requires a WAPP build,
+    Gadgetbridge installation, and a real-watch smoke test.
+  </footer>
+
+  <script type="module" src="/simulator-ui.js"></script>
+</body>
+</html>
