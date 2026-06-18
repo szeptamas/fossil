@@ -1,0 +1,25 @@
+name: Research question
+description: Investigate undocumented Fossil Hybrid HR behavior
+title: "[Research] "
+labels: []
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Exact research question
+      description: Ask one precise question.
+    validations:
+      required: true
+  - type: textarea
+    id: known
+    attributes:
+      label: Known evidence
+      description: Include local paths, symbols, issue numbers, or PR numbers.
+  - type: textarea
+    id: hypotheses
+    attributes:
+      label: Competing hypotheses
+  - type: textarea
+    id: experiment
+    attributes:
+      label: Smallest real-watch experiment
