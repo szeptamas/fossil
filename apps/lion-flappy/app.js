@@ -238,6 +238,7 @@
         var isPlaying = this.game_state === 'playing'
         var isCrashed = this.game_state === 'crashed'
         var showPlayfield = isPlaying || isCrashed
+        var groundOffset = (this.tick_count * this.pipe_speed) % 12
         var wingUp = this.velocity < 0 || this.tick_count % 2 === 0
         var wingY = wingUp ? this.bird_y + 2 : this.bird_y + 7
 
@@ -265,14 +266,23 @@
             title_visible: this.game_state === 'title',
             game_over_visible: this.game_state === 'game_over',
             hud_visible: isPlaying,
-
+            ground_visible: showPlayfield,
             title_text: "Lion's Flappy Bird",
             press_text: 'Press Any Button',
             game_over_text: 'Game Over',
             result_score: 'Score: ' + this.score,
             result_high: 'Highscore: ' + this.high_score
         }
-
+        var gi
+        var gx
+        for (gi = 0; gi < 22; gi++) {
+            gx = gi * 12 - groundOffset
+            values['ground_' + gi + '_a_x'] = gx
+            values['ground_' + gi + '_b_x'] = gx + 2
+            values['ground_' + gi + '_c_x'] = gx + 4
+            values['ground_' + gi + '_d_x'] = gx + 6
+            values['ground_' + gi + '_e_x'] = gx + 8
+        }
         this.pipe_values(this.pipes[0], 'p0', values, showPlayfield)
         this.pipe_values(this.pipes[1], 'p1', values, showPlayfield)
 
