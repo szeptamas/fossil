@@ -25,7 +25,7 @@ const runtime = new FossilRuntime({
   onLog: entry => appendLog(entry.kind, entry.value, entry.at),
   onMoveHands: move => {
     const state = renderer.moveHands(move);
-    elements.handState.textContent = `${state.h.toFixed(1)}° / ${state.m.toFixed(1)}°`;
+    elements.handState.textContent = `${state.h.toFixed(1)}Â° / ${state.m.toFixed(1)}Â°`;
   },
   onDraw: draw => renderer.renderDrawResponse(draw).catch(reportError),
   onAction: action => {
@@ -41,7 +41,7 @@ const runtime = new FossilRuntime({
     elements.response.textContent = JSON.stringify(response, null, 2);
   },
   onState: state => {
-    elements.state.textContent = state.state || "—";
+    elements.state.textContent = state.state || "â€”";
     elements.timerCount.textContent = String(state.timers.length);
   },
 });
@@ -66,7 +66,7 @@ async function loadApplication() {
     const source = await sourceResponse.text();
 
     elements.status.textContent =
-      `${status.identifier} ${status.version ? `v${status.version}` : ""} — ${status.appPath}`;
+      `${status.identifier} ${status.version ? `v${status.version}` : ""} â€” ${status.appPath}`;
 
     await runtime.load(source, manifest);
     elements.common.value = JSON.stringify(runtime.common, null, 2);
@@ -173,3 +173,90 @@ window.addEventListener("keydown", event => {
 });
 
 loadApplication();
+
+const WATCH_BUTTON_HOLD_MS = 650;
+
+document.querySelectorAll("[data-watch-button]").forEach(button => {
+  let holdTimer = null;
+  let held = false;
+  let activePointerId = null;
+
+  const position = button.dataset.watchButton;
+
+  const cleanup = (pointerId, sendReleaseEvent) => {
+    if (activePointerId === null || pointerId !== activePointerId) {
+      return;
+    }
+
+    const wasHeld = held;
+    activePointerId = null;
+    held = false;
+
+    if (holdTimer !== null) {
+      window.clearTimeout(holdTimer);
+      holdTimer = null;
+    }
+
+    button.classList.remove("pressed");
+
+    try {
+      if (button.hasPointerCapture?.(pointerId)) {
+        button.releasePointerCapture(pointerId);
+      }
+    } catch {
+      // The browser may already have released pointer capture.
+    }
+
+    if (sendReleaseEvent) {
+      sendUiEvent(
+        wasHeld
+          ? `${position}_long_press_release`
+          : `${position}_short_press_release`
+      );
+    }
+  };
+
+  button.addEventListener("pointerdown", event => {
+    if (activePointerId !== null) {
+      return;
+    }
+
+    event.preventDefault();
+    activePointerId = event.pointerId;
+    held = false;
+    button.classList.add("pressed");
+    button.setPointerCapture?.(event.pointerId);
+
+    sendUiEvent(`${position}_press`);
+
+    holdTimer = window.setTimeout(() => {
+      holdTimer = null;
+
+      if (activePointerId === event.pointerId) {
+        held = true;
+        sendUiEvent(`${position}_hold`);
+      }
+    }, WATCH_BUTTON_HOLD_MS);
+  });
+
+  button.addEventListener("pointerup", event => {
+    event.preventDefault();
+    cleanup(event.pointerId, true);
+  });
+
+  button.addEventListener("pointercancel", event => {
+    cleanup(event.pointerId, false);
+  });
+
+  button.addEventListener("lostpointercapture", event => {
+    cleanup(event.pointerId, false);
+  });
+
+  button.addEventListener("click", event => {
+    event.preventDefault();
+  });
+
+  button.addEventListener("contextmenu", event => {
+    event.preventDefault();
+  });
+});

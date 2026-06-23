@@ -73,8 +73,17 @@ export class LayoutRenderer {
   }
 
   renderNode(node) {
+    if (node?.visible === false || node?.visible === "false") {
+      return;
+    }
+
     const type = node?.type;
     switch (type) {
+      case "container":
+        break;
+      case "solid":
+        this.renderSolid(node);
+        break;
       case "wapp_template":
         this.renderTemplate(node);
         break;
@@ -102,6 +111,20 @@ export class LayoutRenderer {
     }
   }
 
+  renderSolid(node) {
+    const context = this.context;
+    const placement = node.placement ?? {};
+    const dimension = node.dimension ?? {};
+    const left = Number(placement.left ?? 0);
+    const top = Number(placement.top ?? 0);
+    const width = Math.max(1, Number(dimension.width ?? 1));
+    const height = Math.max(1, Number(dimension.height ?? 1));
+
+    context.save();
+    context.fillStyle = node.color === 0 ? "#f1f1e7" : "#111";
+    context.fillRect(left, top, width, height);
+    context.restore();
+  }
   renderTemplate(node) {
     const context = this.context;
     const title = node.title_string ?? node.header ?? "";
@@ -173,10 +196,10 @@ export class LayoutRenderer {
     const width = Number(dimension.width ?? node.width ?? 240);
     const height = Number(dimension.height ?? node.height ?? 30);
     const text = node.text ?? node.string ?? node.value ?? node.title ?? "";
-    const fontSize = Number(node.font_size ?? node.fontSize ?? 16);
+    const fontSize = Number(node.ppem ?? node.font_size ?? node.fontSize ?? 16);
 
     context.save();
-    context.fillStyle = node.inversion ? "#f1f1e7" : "#111";
+    context.fillStyle = node.color === 0 ? "#f1f1e7" : "#111";
     if (node.inversion) {
       context.fillStyle = "#111";
       context.fillRect(left, top, width, height);

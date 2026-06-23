@@ -280,3 +280,44 @@ footer {
   color: #8f9aa1;
   text-align: center;
 }
+/* clickable physical watch buttons */
+.crown {
+  padding: 0;
+  border: 1px solid #69737a;
+  appearance: none;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
+  z-index: 3;
+}
+
+.crown:hover {
+  background: linear-gradient(90deg, #23292d, #929da3 40%, #30363a);
+}
+
+.crown:focus-visible {
+  outline: 3px solid #8fd8ff;
+  outline-offset: 3px;
+}
+
+.crown.pressed,
+.crown:active {
+  right: -23px;
+  filter: brightness(0.82);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.55);
+}
+
+.crown-top.pressed,
+.crown-top:active {
+  transform: rotate(-8deg);
+}
+
+.crown-middle.pressed,
+.crown-middle:active {
+  transform: none;
+}
+
+.crown-bottom.pressed,
+.crown-bottom:active {
+  transform: rotate(8deg);
+}

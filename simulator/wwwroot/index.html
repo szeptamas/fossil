@@ -10,7 +10,7 @@
   <header class="topbar">
     <div>
       <h1>Fossil Hybrid HR Simulator</h1>
-      <p id="app-status">Loading application…</p>
+      <p id="app-status">Loading applicationâ€¦</p>
     </div>
     <div class="toolbar">
       <button id="reload-app" type="button">Reload app</button>
@@ -23,9 +23,27 @@
     <section class="watch-panel" aria-label="Simulated watch">
       <div id="watch" class="watch">
         <div class="watch-case">
-          <div class="crown crown-top"></div>
-          <div class="crown crown-middle"></div>
-          <div class="crown crown-bottom"></div>
+          <button
+            class="crown crown-top"
+            type="button"
+            data-watch-button="top"
+            aria-label="Top watch button"
+            title="Top: click for short press, hold for hold event"
+          ></button>
+          <button
+            class="crown crown-middle"
+            type="button"
+            data-watch-button="middle"
+            aria-label="Middle watch button"
+            title="Middle: click for short press, hold for hold event"
+          ></button>
+          <button
+            class="crown crown-bottom"
+            type="button"
+            data-watch-button="bottom"
+            aria-label="Bottom watch button"
+            title="Bottom: click for short press, hold for hold event"
+          ></button>
           <div class="display-shell">
             <canvas id="display" width="240" height="240"></canvas>
             <canvas id="hands" width="240" height="240"></canvas>
@@ -56,7 +74,7 @@
       </div>
 
       <p class="keyboard-help">
-        Keyboard: ↑ top short, Enter middle short, ↓ bottom short.
+        Keyboard: â†‘ top short, Enter middle short, â†“ bottom short.
         Hold Shift for hold events.
       </p>
     </section>
@@ -84,13 +102,13 @@
           <h2>Runtime state</h2>
           <dl class="state-list">
             <dt>State machine</dt>
-            <dd id="state-name">—</dd>
+            <dd id="state-name">â€”</dd>
             <dt>Hands</dt>
-            <dd id="hand-state">0° / 0°</dd>
+            <dd id="hand-state">0Â° / 0Â°</dd>
             <dt>Timers</dt>
             <dd id="timer-count">0</dd>
             <dt>Last action</dt>
-            <dd id="last-action">—</dd>
+            <dd id="last-action">â€”</dd>
           </dl>
         </article>
 
