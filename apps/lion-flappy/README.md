@@ -39,3 +39,9 @@ Small safe bird pass:
 - adds subtle velocity-based bird pose offsets
 - keeps bird collision size unchanged
 - keeps background, pipes, ground, labels, collision, scoring, physics, and controls unchanged
+## v0.19 changes
+
+Small safe pipe pass:
+- adds subtle light highlights to pipe bodies and caps
+- uses only supported solid layout nodes
+- keeps pipe geometry, collision, scoring, physics, controls, bird, ground, and labels unchanged
