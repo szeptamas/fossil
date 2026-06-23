@@ -3034,5 +3034,277 @@
                       },
         "visible":  "#bird_visible",
         "inversion":  false
+    },
+    {
+        "id":  177,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  "#p0_top_h"
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p0_body_hi_x",
+                          "top":  26
+                      },
+        "visible":  "#p0_top_visible",
+        "inversion":  false
+    },
+    {
+        "id":  178,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  "#p0_top_h"
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p0_body_inner_x",
+                          "top":  26
+                      },
+        "visible":  "#p0_top_visible",
+        "inversion":  false
+    },
+    {
+        "id":  179,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  24,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p0_lip_inner_x",
+                          "top":  "#p0_top_lip_inner_y"
+                      },
+        "visible":  "#p0_top_lip_visible",
+        "inversion":  false
+    },
+    {
+        "id":  180,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  5
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p0_lip_hi_x",
+                          "top":  "#p0_top_lip_inner_y"
+                      },
+        "visible":  "#p0_top_lip_visible",
+        "inversion":  false
+    },
+    {
+        "id":  181,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  "#p0_bottom_h"
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p0_body_hi_x",
+                          "top":  "#p0_bottom_y"
+                      },
+        "visible":  "#p0_bottom_visible",
+        "inversion":  false
+    },
+    {
+        "id":  182,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  "#p0_bottom_h"
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p0_body_inner_x",
+                          "top":  "#p0_bottom_y"
+                      },
+        "visible":  "#p0_bottom_visible",
+        "inversion":  false
+    },
+    {
+        "id":  183,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  24,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p0_lip_inner_x",
+                          "top":  "#p0_bottom_lip_inner_y"
+                      },
+        "visible":  "#p0_bottom_lip_visible",
+        "inversion":  false
+    },
+    {
+        "id":  184,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  5
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p0_lip_hi_x",
+                          "top":  "#p0_bottom_lip_inner_y"
+                      },
+        "visible":  "#p0_bottom_lip_visible",
+        "inversion":  false
+    },
+    {
+        "id":  185,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  "#p1_top_h"
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p1_body_hi_x",
+                          "top":  26
+                      },
+        "visible":  "#p1_top_visible",
+        "inversion":  false
+    },
+    {
+        "id":  186,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  "#p1_top_h"
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p1_body_inner_x",
+                          "top":  26
+                      },
+        "visible":  "#p1_top_visible",
+        "inversion":  false
+    },
+    {
+        "id":  187,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  24,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p1_lip_inner_x",
+                          "top":  "#p1_top_lip_inner_y"
+                      },
+        "visible":  "#p1_top_lip_visible",
+        "inversion":  false
+    },
+    {
+        "id":  188,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  5
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p1_lip_hi_x",
+                          "top":  "#p1_top_lip_inner_y"
+                      },
+        "visible":  "#p1_top_lip_visible",
+        "inversion":  false
+    },
+    {
+        "id":  189,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  "#p1_bottom_h"
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p1_body_hi_x",
+                          "top":  "#p1_bottom_y"
+                      },
+        "visible":  "#p1_bottom_visible",
+        "inversion":  false
+    },
+    {
+        "id":  190,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  "#p1_bottom_h"
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p1_body_inner_x",
+                          "top":  "#p1_bottom_y"
+                      },
+        "visible":  "#p1_bottom_visible",
+        "inversion":  false
+    },
+    {
+        "id":  191,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  24,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p1_lip_inner_x",
+                          "top":  "#p1_bottom_lip_inner_y"
+                      },
+        "visible":  "#p1_bottom_lip_visible",
+        "inversion":  false
+    },
+    {
+        "id":  192,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  1,
+                          "height":  5
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#p1_lip_hi_x",
+                          "top":  "#p1_bottom_lip_inner_y"
+                      },
+        "visible":  "#p1_bottom_lip_visible",
+        "inversion":  false
     }
 ]
