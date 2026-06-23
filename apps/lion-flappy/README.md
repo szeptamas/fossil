@@ -59,3 +59,11 @@ Small safe bird detail pass:
 - keeps all layout node types Fossil-compatible
 - keeps bird collision size unchanged
 - keeps background, pipes, ground, labels, collision, scoring, physics, and controls unchanged
+## v0.22 changes
+
+Small safe bird pose pass:
+- nudges wing, beak, and tail x positions by bird movement state
+- makes up/down/crash poses slightly more readable
+- keeps all layout node types Fossil-compatible
+- keeps bird collision size unchanged
+- keeps background, pipes, ground, labels, collision, scoring, physics, and controls unchanged
