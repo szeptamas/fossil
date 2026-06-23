@@ -735,8 +735,8 @@
         "type":  "solid",
         "color":  3,
         "dimension":  {
-                          "width":  12,
-                          "height":  12
+                          "width":  13,
+                          "height":  11
                       },
         "placement":  {
                           "type":  "absolute",
@@ -752,7 +752,7 @@
         "type":  "solid",
         "color":  0,
         "dimension":  {
-                          "width":  7,
+                          "width":  6,
                           "height":  4
                       },
         "placement":  {
@@ -786,8 +786,8 @@
         "type":  "solid",
         "color":  3,
         "dimension":  {
-                          "width":  4,
-                          "height":  4
+                          "width":  5,
+                          "height":  3
                       },
         "placement":  {
                           "type":  "absolute",
