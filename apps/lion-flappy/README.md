@@ -120,3 +120,11 @@ Small safe score HUD simplification:
 - keeps only the light Score text on the black gameplay background
 - moves the Score text slightly down to avoid overlap with the ceiling line
 - keeps title, Game Over, bird, pipes, ground, collision, scoring, physics, and controls unchanged
+## v0.31 changes
+
+40x30 Lion Flappy bird visual pass:
+- replaces the old small bird with a larger filled pixel bird based on the hand-drawn reference
+- uses exact 40x30 sprite placement with 1:1 Fossil layout pixels
+- keeps both bird phases identical for now so the accepted silhouette can be stabilized first
+- uses only Fossil-compatible solid layout nodes
+- keeps title, Game Over, pipes, ground, collision, scoring, physics, and controls unchanged

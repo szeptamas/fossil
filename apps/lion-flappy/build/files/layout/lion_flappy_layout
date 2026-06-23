@@ -760,7 +760,7 @@
                           "left":  "#bird_x",
                           "top":  "#bird_y"
                       },
-        "visible":  "#bird_visible",
+        "visible":  false,
         "inversion":  false
     },
     {
@@ -777,7 +777,7 @@
                           "left":  "#wing_x",
                           "top":  "#wing_y"
                       },
-        "visible":  "#bird_visible",
+        "visible":  false,
         "inversion":  false
     },
     {
@@ -794,7 +794,7 @@
                           "left":  "#eye_x",
                           "top":  "#eye_y"
                       },
-        "visible":  "#bird_visible",
+        "visible":  false,
         "inversion":  false
     },
     {
@@ -811,7 +811,7 @@
                           "left":  "#beak_x",
                           "top":  "#beak_y"
                       },
-        "visible":  "#bird_visible",
+        "visible":  false,
         "inversion":  false
     },
     {
@@ -3015,7 +3015,7 @@
                           "left":  "#tail_x",
                           "top":  "#tail_y"
                       },
-        "visible":  "#bird_visible",
+        "visible":  false,
         "inversion":  false
     },
     {
@@ -3032,7 +3032,7 @@
                           "left":  "#crest_x",
                           "top":  "#crest_y"
                       },
-        "visible":  "#bird_visible",
+        "visible":  false,
         "inversion":  false
     },
     {
@@ -3049,7 +3049,7 @@
                           "left":  "#belly_x",
                           "top":  "#belly_y"
                       },
-        "visible":  "#bird_visible",
+        "visible":  false,
         "inversion":  false
     },
     {
@@ -3343,5 +3343,1807 @@
         "visible":  "#title_visible",
         "inversion":  false,
         "color":  0
+    },
+    {
+        "id":  195,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_3"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  196,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_10",
+                          "top":  "#bird_py_4"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  197,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  6,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_4"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  198,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_10",
+                          "top":  "#bird_py_5"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  199,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  6,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_5"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  200,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  10,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_10",
+                          "top":  "#bird_py_6"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  201,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  8,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_6"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  202,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_7"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  203,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  10,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_7"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  204,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_8"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  205,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  5,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_8"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  206,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_9"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  207,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  5,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_9"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  208,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_10"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  209,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  5,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_10"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  210,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_30",
+                          "top":  "#bird_py_10"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  211,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_6",
+                          "top":  "#bird_py_11"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  212,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_11",
+                          "top":  "#bird_py_11"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  213,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  10,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_11"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  214,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  5,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_6",
+                          "top":  "#bird_py_12"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  215,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  7,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_12"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  216,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  10,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_12"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  217,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_13"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  218,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_13"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  219,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  6,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_13"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  220,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_14"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  221,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_14"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  222,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_15"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  223,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_15"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  224,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  6,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_32",
+                          "top":  "#bird_py_15"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  225,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_16"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  226,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_16"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  227,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_26",
+                          "top":  "#bird_py_16"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  228,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_17"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  229,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_17"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  230,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_26",
+                          "top":  "#bird_py_17"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  231,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_4",
+                          "top":  "#bird_py_18"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  232,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  7,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_18"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  233,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_18"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  234,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_4",
+                          "top":  "#bird_py_19"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  235,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  7,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_19"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  236,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_19"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  237,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_6",
+                          "top":  "#bird_py_20"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  238,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_20"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  239,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_26",
+                          "top":  "#bird_py_20"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  240,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_6",
+                          "top":  "#bird_py_21"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  241,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_21"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  242,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_26",
+                          "top":  "#bird_py_21"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  243,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  13,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_11",
+                          "top":  "#bird_py_22"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  244,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  22,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_23"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  245,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  22,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_24"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  246,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  14,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_11",
+                          "top":  "#bird_py_25"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  247,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  14,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_11",
+                          "top":  "#bird_py_26"
+                      },
+        "visible":  "#bird_phase0_visible",
+        "inversion":  false
+    },
+    {
+        "id":  248,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_3"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  249,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_10",
+                          "top":  "#bird_py_4"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  250,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  6,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_4"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  251,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_10",
+                          "top":  "#bird_py_5"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  252,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  6,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_5"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  253,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  10,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_10",
+                          "top":  "#bird_py_6"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  254,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  8,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_6"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  255,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_7"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  256,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  10,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_7"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  257,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_8"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  258,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  5,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_8"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  259,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_9"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  260,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  5,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_9"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  261,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_10"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  262,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  5,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_10"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  263,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_30",
+                          "top":  "#bird_py_10"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  264,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_6",
+                          "top":  "#bird_py_11"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  265,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_11",
+                          "top":  "#bird_py_11"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  266,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  10,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_11"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  267,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  5,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_6",
+                          "top":  "#bird_py_12"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  268,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  7,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_12"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  269,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  10,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_22",
+                          "top":  "#bird_py_12"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  270,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_13"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  271,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_13"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  272,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  6,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_13"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  273,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_14"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  274,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_14"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  275,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_15"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  276,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_15"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  277,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  6,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_32",
+                          "top":  "#bird_py_15"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  278,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_16"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  279,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_16"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  280,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_26",
+                          "top":  "#bird_py_16"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  281,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_2",
+                          "top":  "#bird_py_17"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  282,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_17"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  283,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  12,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_26",
+                          "top":  "#bird_py_17"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  284,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_4",
+                          "top":  "#bird_py_18"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  285,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  7,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_18"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  286,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_18"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  287,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_4",
+                          "top":  "#bird_py_19"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  288,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  7,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_15",
+                          "top":  "#bird_py_19"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  289,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_24",
+                          "top":  "#bird_py_19"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  290,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_6",
+                          "top":  "#bird_py_20"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  291,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_20"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  292,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_26",
+                          "top":  "#bird_py_20"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  293,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  2,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_6",
+                          "top":  "#bird_py_21"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  294,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  11,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_13",
+                          "top":  "#bird_py_21"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  295,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  9,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_26",
+                          "top":  "#bird_py_21"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  296,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  13,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_11",
+                          "top":  "#bird_py_22"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  297,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  22,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_23"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  298,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  22,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_8",
+                          "top":  "#bird_py_24"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  299,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  14,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_11",
+                          "top":  "#bird_py_25"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
+    },
+    {
+        "id":  300,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  0,
+        "dimension":  {
+                          "width":  14,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#bird_px_11",
+                          "top":  "#bird_py_26"
+                      },
+        "visible":  "#bird_phase1_visible",
+        "inversion":  false
     }
 ]
