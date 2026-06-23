@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "type": "wapp_template",
+    "title_string": "#header",
+    "dimension": {
+      "type": "rigid",
+      "width": 240,
+      "height": 240
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 0,
+      "top": 0
+    },
+    "visible": true,
+    "inversion": false
+  },
+  {
+    "id": 1,
+    "parent_id": 0,
+    "type": "option_menu",
+    "options": "#options",
+    "option_selected": "#selected_option",
+    "dimension": {
+      "type": "rigid",
+      "width": 240,
+      "height": 72
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 0,
+      "top": 142
+    },
+    "visible": true,
+    "inversion": false
+  }
+]

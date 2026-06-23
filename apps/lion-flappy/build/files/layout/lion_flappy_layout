@@ -1,0 +1,556 @@
+[
+  {
+    "id": 0,
+    "type": "container",
+    "dimension": {
+      "type": "rigid",
+      "width": 240,
+      "height": 240
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 0,
+      "top": 0
+    },
+    "visible": true,
+    "inversion": false
+  },
+  {
+    "id": 1,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 240,
+      "height": 4
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 0,
+      "top": 24
+    },
+    "visible": true,
+    "inversion": false
+  },
+  {
+    "id": 2,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 240,
+      "height": 4
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 0,
+      "top": 216
+    },
+    "visible": true,
+    "inversion": false
+  },
+  {
+    "id": 3,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 20,
+      "height": "#p0_top_h"
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#p0_x",
+      "top": 26
+    },
+    "visible": "#p0_top_visible",
+    "inversion": false
+  },
+  {
+    "id": 4,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 26,
+      "height": 5
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#p0_lip_x",
+      "top": "#p0_top_lip_y"
+    },
+    "visible": "#p0_top_lip_visible",
+    "inversion": false
+  },
+  {
+    "id": 5,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 20,
+      "height": "#p0_bottom_h"
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#p0_x",
+      "top": "#p0_bottom_y"
+    },
+    "visible": "#p0_bottom_visible",
+    "inversion": false
+  },
+  {
+    "id": 6,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 26,
+      "height": 5
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#p0_lip_x",
+      "top": "#p0_bottom_lip_y"
+    },
+    "visible": "#p0_bottom_lip_visible",
+    "inversion": false
+  },
+  {
+    "id": 26,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 20,
+      "height": "#p1_top_h"
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#p1_x",
+      "top": 26
+    },
+    "visible": "#p1_top_visible",
+    "inversion": false
+  },
+  {
+    "id": 27,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 26,
+      "height": 5
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#p1_lip_x",
+      "top": "#p1_top_lip_y"
+    },
+    "visible": "#p1_top_lip_visible",
+    "inversion": false
+  },
+  {
+    "id": 28,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 20,
+      "height": "#p1_bottom_h"
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#p1_x",
+      "top": "#p1_bottom_y"
+    },
+    "visible": "#p1_bottom_visible",
+    "inversion": false
+  },
+  {
+    "id": 29,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 26,
+      "height": 5
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#p1_lip_x",
+      "top": "#p1_bottom_lip_y"
+    },
+    "visible": "#p1_bottom_lip_visible",
+    "inversion": false
+  },
+  {
+    "id": 7,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 12,
+      "height": 12
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#bird_x",
+      "top": "#bird_y"
+    },
+    "visible": "#bird_visible",
+    "inversion": false
+  },
+  {
+    "id": 8,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 1,
+    "dimension": {
+      "width": 7,
+      "height": 4
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#wing_x",
+      "top": "#wing_y"
+    },
+    "visible": "#bird_visible",
+    "inversion": false
+  },
+  {
+    "id": 9,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 4,
+      "height": 4
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#beak_x",
+      "top": "#beak_y"
+    },
+    "visible": "#bird_visible",
+    "inversion": false
+  },
+  {
+    "id": 30,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 0,
+    "dimension": {
+      "width": 3,
+      "height": 3
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#eye_x",
+      "top": "#eye_y"
+    },
+    "visible": "#bird_visible",
+    "inversion": false
+  },
+  {
+    "id": 10,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 5,
+      "height": 5
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#crash_x1",
+      "top": "#crash_y1"
+    },
+    "visible": "#crash_visible",
+    "inversion": false
+  },
+  {
+    "id": 11,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 5,
+      "height": 5
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#crash_x2",
+      "top": "#crash_y1"
+    },
+    "visible": "#crash_visible",
+    "inversion": false
+  },
+  {
+    "id": 12,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 5,
+      "height": 5
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#crash_x1",
+      "top": "#crash_y2"
+    },
+    "visible": "#crash_visible",
+    "inversion": false
+  },
+  {
+    "id": 13,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 3,
+    "dimension": {
+      "width": 5,
+      "height": 5
+    },
+    "placement": {
+      "type": "absolute",
+      "left": "#crash_x2",
+      "top": "#crash_y2"
+    },
+    "visible": "#crash_visible",
+    "inversion": false
+  },
+  {
+    "id": 14,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 0,
+    "dimension": {
+      "width": 92,
+      "height": 20
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 74,
+      "top": 2
+    },
+    "visible": "#hud_visible",
+    "inversion": false
+  },
+  {
+    "id": 15,
+    "parent_id": 0,
+    "type": "text",
+    "text": "#score_line",
+    "ppem": 15,
+    "ascent": 12,
+    "descent": 4,
+    "color": 3,
+    "dimension": {
+      "width": 92,
+      "height": 18
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 74,
+      "top": 3
+    },
+    "visible": "#hud_visible",
+    "inversion": false
+  },
+  {
+    "id": 16,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 0,
+    "dimension": {
+      "width": 184,
+      "height": 34
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 28,
+      "top": 44
+    },
+    "visible": "#title_visible",
+    "inversion": false
+  },
+  {
+    "id": 17,
+    "parent_id": 0,
+    "type": "text",
+    "text": "#title_text",
+    "ppem": 18,
+    "ascent": 15,
+    "descent": 4,
+    "color": 3,
+    "dimension": {
+      "width": 184,
+      "height": 22
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 28,
+      "top": 50
+    },
+    "visible": "#title_visible",
+    "inversion": false
+  },
+  {
+    "id": 18,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 0,
+    "dimension": {
+      "width": 160,
+      "height": 28
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 40,
+      "top": 156
+    },
+    "visible": "#title_visible",
+    "inversion": false
+  },
+  {
+    "id": 19,
+    "parent_id": 0,
+    "type": "text",
+    "text": "#press_text",
+    "ppem": 13,
+    "ascent": 11,
+    "descent": 3,
+    "color": 3,
+    "dimension": {
+      "width": 160,
+      "height": 18
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 40,
+      "top": 161
+    },
+    "visible": "#title_visible",
+    "inversion": false
+  },
+  {
+    "id": 20,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 0,
+    "dimension": {
+      "width": 160,
+      "height": 34
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 40,
+      "top": 42
+    },
+    "visible": "#game_over_visible",
+    "inversion": false
+  },
+  {
+    "id": 21,
+    "parent_id": 0,
+    "type": "text",
+    "text": "#game_over_text",
+    "ppem": 21,
+    "ascent": 17,
+    "descent": 5,
+    "color": 3,
+    "dimension": {
+      "width": 160,
+      "height": 24
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 40,
+      "top": 48
+    },
+    "visible": "#game_over_visible",
+    "inversion": false
+  },
+  {
+    "id": 22,
+    "parent_id": 0,
+    "type": "solid",
+    "color": 0,
+    "dimension": {
+      "width": 166,
+      "height": 58
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 37,
+      "top": 154
+    },
+    "visible": "#game_over_visible",
+    "inversion": false
+  },
+  {
+    "id": 23,
+    "parent_id": 0,
+    "type": "text",
+    "text": "#result_score",
+    "ppem": 15,
+    "ascent": 12,
+    "descent": 4,
+    "color": 3,
+    "dimension": {
+      "width": 166,
+      "height": 18
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 37,
+      "top": 158
+    },
+    "visible": "#game_over_visible",
+    "inversion": false
+  },
+  {
+    "id": 24,
+    "parent_id": 0,
+    "type": "text",
+    "text": "#result_high",
+    "ppem": 15,
+    "ascent": 12,
+    "descent": 4,
+    "color": 3,
+    "dimension": {
+      "width": 166,
+      "height": 18
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 37,
+      "top": 176
+    },
+    "visible": "#game_over_visible",
+    "inversion": false
+  },
+  {
+    "id": 25,
+    "parent_id": 0,
+    "type": "text",
+    "text": "#press_text",
+    "ppem": 12,
+    "ascent": 10,
+    "descent": 3,
+    "color": 3,
+    "dimension": {
+      "width": 166,
+      "height": 16
+    },
+    "placement": {
+      "type": "absolute",
+      "left": 37,
+      "top": 194
+    },
+    "visible": "#game_over_visible",
+    "inversion": false
+  }
+]
