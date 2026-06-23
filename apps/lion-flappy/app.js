@@ -283,7 +283,7 @@
             press_text: 'Press Any Button',
             title_high: 'Highscore: ' + this.high_score,
             game_over_text: 'Game Over',
-            result_score: 'Score: ' + this.score,
+            result_score: 'Last score: ' + this.score,
             result_high: 'Highscore: ' + this.high_score
         }
         var gi

@@ -73,3 +73,9 @@ Small safe title pass:
 - shows the current Highscore on the title screen
 - uses only supported 	ext layout nodes
 - keeps gameplay, graphics, collision, scoring, physics, and controls unchanged
+## v0.24 changes
+
+Small safe result-label pass:
+- changes the Game Over result label from "Score:" to "Last score:"
+- keeps the in-game HUD label as "Score:"
+- keeps title screen, gameplay, graphics, collision, scoring, physics, and controls unchanged
