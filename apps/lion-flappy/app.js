@@ -239,8 +239,11 @@
         var isCrashed = this.game_state === 'crashed'
         var showPlayfield = isPlaying || isCrashed
         var groundOffset = (this.tick_count * this.pipe_speed) % 12
-        var wingUp = this.velocity < 0 || this.tick_count % 2 === 0
-        var wingY = wingUp ? this.bird_y + 2 : this.bird_y + 7
+        var birdPose = isCrashed ? 'crash' : (this.velocity < -1 ? 'up' : (this.velocity > 2 ? 'down' : 'neutral'))
+        var wingY = birdPose === 'up' ? this.bird_y + 2 : (birdPose === 'down' || birdPose === 'crash' ? this.bird_y + 8 : this.bird_y + 5)
+        var beakY = birdPose === 'up' ? this.bird_y + 3 : (birdPose === 'down' || birdPose === 'crash' ? this.bird_y + 6 : this.bird_y + 4)
+        var eyeY = birdPose === 'up' ? this.bird_y + 2 : (birdPose === 'down' || birdPose === 'crash' ? this.bird_y + 4 : this.bird_y + 2)
+        var tailY = birdPose === 'up' ? this.bird_y + 8 : (birdPose === 'down' || birdPose === 'crash' ? this.bird_y + 3 : this.bird_y + 6)
 
         var values = {
             json_file: 'lion_flappy_layout',
@@ -250,9 +253,15 @@
             wing_x: Math.floor(this.bird_x + 2),
             wing_y: Math.floor(wingY),
             beak_x: Math.floor(this.bird_x + 12),
-            beak_y: Math.floor(this.bird_y + 4),
+            beak_y: Math.floor(beakY),
             eye_x: Math.floor(this.bird_x + 8),
-            eye_y: Math.floor(this.bird_y + 2),
+            eye_y: Math.floor(eyeY),
+            tail_x: Math.floor(this.bird_x - 3),
+            tail_y: Math.floor(tailY),
+            belly_x: Math.floor(this.bird_x + 3),
+            belly_y: Math.floor(this.bird_y + 8),
+            crest_x: Math.floor(this.bird_x + 2),
+            crest_y: Math.floor(this.bird_y + 1),
             bird_visible: showPlayfield,
 
             crash_x1: Math.floor(this.bird_x - 4),
