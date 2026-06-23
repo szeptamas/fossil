@@ -100,3 +100,10 @@ Full inverted visual pass:
 - applies consistently to title, gameplay, crash, and Game Over screens
 - uses only supported layout primitives
 - keeps collision, scoring, physics, and controls unchanged
+## v0.28 changes
+
+Small safe inverted-bird pass:
+- makes the bird slightly larger and more readable on the black gameplay background
+- keeps dark eye and wing details for contrast
+- uses only supported solid layout nodes
+- keeps title, Game Over, pipes, ground, collision, scoring, physics, and controls unchanged
