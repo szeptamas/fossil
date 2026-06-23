@@ -1,4 +1,4 @@
-return {
+﻿return {
     node_name: '',
     manifest: {
         timers: ['game_tick', 'crash_pause']
@@ -10,7 +10,7 @@ return {
     config: {},
 
     tick_period: 320,
-    crash_pause: 900,
+    crash_pause: 2200,
     bird_x: 58,
     bird_y: 110,
     bird_size: 12,
@@ -260,7 +260,7 @@ return {
             crash_y2: Math.floor(this.bird_y + 13),
             crash_visible: isCrashed,
 
-            score_line: 'Score ' + this.score,
+            score_line: 'Score: ' + this.score,
 
             title_visible: this.game_state === 'title',
             game_over_visible: this.game_state === 'game_over',
@@ -269,8 +269,8 @@ return {
             title_text: "Lion's Flappy Bird",
             press_text: 'Press Any Button',
             game_over_text: 'Game Over',
-            result_score: 'Score ' + this.score,
-            result_high: 'High ' + this.high_score
+            result_score: 'Score: ' + this.score,
+            result_high: 'Highscore: ' + this.high_score
         }
 
         this.pipe_values(this.pipes[0], 'p0', values, showPlayfield)
@@ -371,14 +371,7 @@ return {
 
                 if (state_phase === 'during') {
                     return function (self, state_machine, event, response) {
-                        if (event.type === 'timer_expired') {
-                            if (is_this_timer_expired(event, self.node_name, 'crash_pause')) {
-                                state_machine.set_current_state('game_over')
-                            }
-                        } else if (self.any_short_press(event.type)) {
-                            stop_timer(self.node_name, 'crash_pause')
-                            state_machine.set_current_state('game_over')
-                        }
+                        if (event.type === 'timer_expired') { if (is_this_timer_expired(event, self.node_name, 'crash_pause')) { state_machine.set_current_state('game_over') } }
                     }
                 }
 

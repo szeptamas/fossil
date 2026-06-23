@@ -1,7 +1,16 @@
-# Lion Flappy
+﻿# Lion Flappy
 
 Flappy Bird-style Fossil Hybrid HR game.
 
+## v0.16 changes
+
+Small safe polish pass:
+- changes gameplay label to "Score:"
+- changes game-over labels to "Score:" and "Highscore:"
+- lengthens the crash pause
+- prevents short-press skipping during the crash pause
+- leaves graphics, layout primitives, collision, scoring, physics, controls, and pipe geometry unchanged
+- leaves persist.version unchanged because stored data schema is unchanged
 ## v0.15 changes
 
 Keeps the v0.14 fixes and adds visual fine-tuning to the pipes:
