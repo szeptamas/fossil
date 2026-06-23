@@ -752,8 +752,8 @@
         "type":  "solid",
         "color":  0,
         "dimension":  {
-                          "width":  13,
-                          "height":  11
+                          "width":  15,
+                          "height":  12
                       },
         "placement":  {
                           "type":  "absolute",
@@ -803,7 +803,7 @@
         "type":  "solid",
         "color":  0,
         "dimension":  {
-                          "width":  5,
+                          "width":  6,
                           "height":  3
                       },
         "placement":  {
@@ -3007,7 +3007,7 @@
         "type":  "solid",
         "color":  0,
         "dimension":  {
-                          "width":  3,
+                          "width":  4,
                           "height":  3
                       },
         "placement":  {
@@ -3024,7 +3024,7 @@
         "type":  "solid",
         "color":  0,
         "dimension":  {
-                          "width":  2,
+                          "width":  3,
                           "height":  2
                       },
         "placement":  {
@@ -3039,9 +3039,9 @@
         "id":  176,
         "parent_id":  0,
         "type":  "solid",
-        "color":  0,
+        "color":  1,
         "dimension":  {
-                          "width":  4,
+                          "width":  5,
                           "height":  1
                       },
         "placement":  {
