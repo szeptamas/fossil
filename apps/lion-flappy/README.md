@@ -52,3 +52,10 @@ Small safe bird proportion pass:
 - uses only existing supported solid layout nodes
 - keeps bird collision size unchanged
 - keeps background, pipes, ground, labels, collision, scoring, physics, and controls unchanged
+## v0.21 changes
+
+Small safe bird detail pass:
+- nudges beak, eye, tail, and crest positions by 1 pixel
+- keeps all layout node types Fossil-compatible
+- keeps bird collision size unchanged
+- keeps background, pipes, ground, labels, collision, scoring, physics, and controls unchanged
