@@ -45,3 +45,10 @@ Small safe pipe pass:
 - adds subtle light highlights to pipe bodies and caps
 - uses only supported solid layout nodes
 - keeps pipe geometry, collision, scoring, physics, controls, bird, ground, and labels unchanged
+## v0.20 changes
+
+Small safe bird proportion pass:
+- slightly adjusts the existing bird body, wing, eye, and beak proportions
+- uses only existing supported solid layout nodes
+- keeps bird collision size unchanged
+- keeps background, pipes, ground, labels, collision, scoring, physics, and controls unchanged
