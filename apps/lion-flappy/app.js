@@ -296,6 +296,18 @@
             values['ground_' + gi + '_d_x'] = gx + 6
             values['ground_' + gi + '_e_x'] = gx + 8
         }
+        var bi
+        var birdSpriteBaseX = Math.floor(this.bird_x - 20)
+        var birdSpriteBaseY = Math.floor(this.bird_y - 15)
+        var birdPhase = isPlaying && this.velocity < 0 ? 1 : 0
+        values['bird_phase0_visible'] = showPlayfield && birdPhase === 0
+        values['bird_phase1_visible'] = showPlayfield && birdPhase === 1
+        for (bi = 0; bi < 40; bi++) {
+            values['bird_px_' + bi] = birdSpriteBaseX + bi
+        }
+        for (bi = 0; bi < 30; bi++) {
+            values['bird_py_' + bi] = birdSpriteBaseY + bi
+        }
         this.pipe_values(this.pipes[0], 'p0', values, showPlayfield)
         this.pipe_values(this.pipes[1], 'p1', values, showPlayfield)
 
