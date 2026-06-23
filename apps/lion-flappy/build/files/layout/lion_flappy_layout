@@ -2983,5 +2983,56 @@
                       },
         "visible":  "#ground_visible",
         "inversion":  false
+    },
+    {
+        "id":  174,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  1,
+        "dimension":  {
+                          "width":  3,
+                          "height":  3
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#tail_x",
+                          "top":  "#tail_y"
+                      },
+        "visible":  "#bird_visible",
+        "inversion":  false
+    },
+    {
+        "id":  175,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  1,
+        "dimension":  {
+                          "width":  2,
+                          "height":  2
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#crest_x",
+                          "top":  "#crest_y"
+                      },
+        "visible":  "#bird_visible",
+        "inversion":  false
+    },
+    {
+        "id":  176,
+        "parent_id":  0,
+        "type":  "solid",
+        "color":  1,
+        "dimension":  {
+                          "width":  4,
+                          "height":  1
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  "#belly_x",
+                          "top":  "#belly_y"
+                      },
+        "visible":  "#bird_visible",
+        "inversion":  false
     }
 ]

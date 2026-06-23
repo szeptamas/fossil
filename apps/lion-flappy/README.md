@@ -32,3 +32,10 @@ Small safe visual pass:
 - adds a scrolling wave-like ground detail
 - uses only supported solid layout nodes
 - keeps background, pipes, bird, labels, collision, scoring, physics, and controls unchanged
+## v0.18 changes
+
+Small safe bird pass:
+- adds a few supported solid details to the bird
+- adds subtle velocity-based bird pose offsets
+- keeps bird collision size unchanged
+- keeps background, pipes, ground, labels, collision, scoring, physics, and controls unchanged
