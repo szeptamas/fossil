@@ -1023,13 +1023,13 @@
         "type":  "solid",
         "color":  0,
         "dimension":  {
-                          "width":  166,
-                          "height":  58
+                          "width":  172,
+                          "height":  74
                       },
         "placement":  {
                           "type":  "absolute",
-                          "left":  37,
-                          "top":  154
+                          "left":  34,
+                          "top":  136
                       },
         "visible":  "#game_over_visible",
         "inversion":  false
@@ -1044,13 +1044,13 @@
         "descent":  4,
         "color":  3,
         "dimension":  {
-                          "width":  166,
-                          "height":  18
+                          "width":  160,
+                          "height":  20
                       },
         "placement":  {
                           "type":  "absolute",
-                          "left":  37,
-                          "top":  158
+                          "left":  40,
+                          "top":  145
                       },
         "visible":  "#game_over_visible",
         "inversion":  false
@@ -1065,13 +1065,13 @@
         "descent":  4,
         "color":  3,
         "dimension":  {
-                          "width":  166,
-                          "height":  18
+                          "width":  160,
+                          "height":  20
                       },
         "placement":  {
                           "type":  "absolute",
-                          "left":  37,
-                          "top":  176
+                          "left":  40,
+                          "top":  166
                       },
         "visible":  "#game_over_visible",
         "inversion":  false
@@ -1086,13 +1086,13 @@
         "descent":  4,
         "color":  3,
         "dimension":  {
-                          "width":  166,
-                          "height":  16
+                          "width":  160,
+                          "height":  20
                       },
         "placement":  {
                           "type":  "absolute",
-                          "left":  37,
-                          "top":  194
+                          "left":  40,
+                          "top":  189
                       },
         "visible":  "#game_over_visible",
         "inversion":  false

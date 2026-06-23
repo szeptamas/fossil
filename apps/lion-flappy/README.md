@@ -79,3 +79,9 @@ Small safe result-label pass:
 - changes the Game Over result label from "Score:" to "Last score:"
 - keeps the in-game HUD label as "Score:"
 - keeps title screen, gameplay, graphics, collision, scoring, physics, and controls unchanged
+## v0.25 changes
+
+Small safe Game Over panel pass:
+- makes the lower Game Over result panel slightly taller
+- gives Last score, Highscore, and Press Any Button more deliberate spacing
+- keeps title screen, gameplay, graphics, collision, scoring, physics, and controls unchanged
