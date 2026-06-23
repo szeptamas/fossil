@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param()
 
 $ErrorActionPreference = "Stop"
@@ -130,6 +130,61 @@ foreach ($requiredSimulatorFile in @(
     }
 }
 
+$layoutSupportedNodeTypes = @(
+    "container",
+    "solid",
+    "wapp_template",
+    "option_menu",
+    "text",
+    "text_box",
+    "label",
+    "line",
+    "rectangle",
+    "rect",
+    "circle"
+)
+$layoutSupportedNodeTypeSet = @{}
+foreach ($layoutSupportedNodeType in $layoutSupportedNodeTypes) {
+    $layoutSupportedNodeTypeSet[$layoutSupportedNodeType] = $true
+}
+$layoutFiles = @(
+    Get-ChildItem -Path $repoRoot -Recurse -File -ErrorAction SilentlyContinue |
+        Where-Object {
+            $_.FullName -notmatch '[\\/]\.git[\\/]' -and
+            $_.FullName -match '[\\/]build[\\/]files[\\/]layout[\\/]'
+        }
+)
+foreach ($layoutFile in $layoutFiles) {
+    $relativePath = $layoutFile.FullName.Substring($repoRoot.Length).TrimStart("\", "/")
+    try {
+        $parsedLayout = Get-Content -Raw -LiteralPath $layoutFile.FullName | ConvertFrom-Json
+        $layoutNodes = @($parsedLayout)
+        if ($layoutNodes.Count -eq 1 -and $layoutNodes[0] -is [System.Array]) {
+            $layoutNodes = $layoutNodes[0]
+        }
+        if ($layoutNodes.Count -eq 0) {
+            $validationErrors.Add(("Empty layout file: {0}" -f $relativePath)) | Out-Null
+            continue
+        }
+        foreach ($layoutNode in $layoutNodes) {
+            if ($null -eq $layoutNode -or $null -eq $layoutNode.PSObject.Properties["type"]) {
+                $validationErrors.Add(("Layout node missing top-level type in {0}" -f $relativePath)) | Out-Null
+                continue
+            }
+            $layoutNodeType = [string]$layoutNode.type
+            if (-not $layoutSupportedNodeTypeSet.ContainsKey($layoutNodeType)) {
+                $validationErrors.Add((
+                    "Unsupported layout node type '{0}' in {1}. Supported layout node types: {2}" -f
+                    $layoutNodeType,
+                    $relativePath,
+                    ($layoutSupportedNodeTypes -join ", ")
+                )) | Out-Null
+            }
+        }
+    } catch {
+        $validationErrors.Add(("Invalid layout JSON: {0} - {1}" -f $relativePath, $_.Exception.Message)) | Out-Null
+    }
+}
 $generatedBinaries = @(
     Get-ChildItem -Path $repoRoot -Recurse -File -ErrorAction SilentlyContinue |
         Where-Object {
@@ -157,6 +212,7 @@ if ($validationErrors.Count -gt 0) {
 }
 
 Write-Host "Repository validation passed." -ForegroundColor Green
+Write-Host ("Layout files checked: {0}" -f $layoutFiles.Count)
 Write-Host ("PowerShell files parsed: {0}" -f $powerShellFiles.Count)
 Write-Host ("App manifests checked:  {0}" -f $appDirectories.Count)
 Write-Host ("Python files checked:   {0}" -f $pythonFiles.Count)
