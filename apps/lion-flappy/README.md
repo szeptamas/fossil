@@ -113,3 +113,10 @@ Small safe score panel pass:
 - moves the in-game Score panel slightly down from the circular display edge
 - keeps the inverted black panel / light text style
 - keeps title, Game Over, bird, pipes, ground, collision, scoring, physics, and controls unchanged
+## v0.30 changes
+
+Small safe score HUD simplification:
+- removes the separate in-game Score background panel
+- keeps only the light Score text on the black gameplay background
+- moves the Score text slightly down to avoid overlap with the ceiling line
+- keeps title, Game Over, bird, pipes, ground, collision, scoring, physics, and controls unchanged
