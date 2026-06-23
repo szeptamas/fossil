@@ -91,3 +91,12 @@ Small safe title panel pass:
 - makes the lower title panel slightly taller
 - groups Highscore and Press Any Button more consistently
 - keeps gameplay, graphics, collision, scoring, physics, and controls unchanged
+## v0.27 changes
+
+Full inverted visual pass:
+- inverts all explicit black/white layout colors
+- assigns explicit colors to drawable nodes that previously relied on defaults
+- adds an explicit full black background
+- applies consistently to title, gameplay, crash, and Game Over screens
+- uses only supported layout primitives
+- keeps collision, scoring, physics, and controls unchanged
