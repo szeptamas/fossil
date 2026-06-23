@@ -85,3 +85,9 @@ Small safe Game Over panel pass:
 - makes the lower Game Over result panel slightly taller
 - gives Last score, Highscore, and Press Any Button more deliberate spacing
 - keeps title screen, gameplay, graphics, collision, scoring, physics, and controls unchanged
+## v0.26 changes
+
+Small safe title panel pass:
+- makes the lower title panel slightly taller
+- groups Highscore and Press Any Button more consistently
+- keeps gameplay, graphics, collision, scoring, physics, and controls unchanged
