@@ -3306,5 +3306,24 @@
                       },
         "visible":  "#p1_bottom_lip_visible",
         "inversion":  false
+    },
+    {
+        "id":  193,
+        "parent_id":  0,
+        "type":  "text",
+        "text":  "#title_high",
+        "font":  "gothic_18",
+        "alignment":  "center",
+        "dimension":  {
+                          "width":  160,
+                          "height":  22
+                      },
+        "placement":  {
+                          "type":  "absolute",
+                          "left":  40,
+                          "top":  132
+                      },
+        "visible":  "#title_visible",
+        "inversion":  false
     }
 ]

@@ -67,3 +67,9 @@ Small safe bird pose pass:
 - keeps all layout node types Fossil-compatible
 - keeps bird collision size unchanged
 - keeps background, pipes, ground, labels, collision, scoring, physics, and controls unchanged
+## v0.23 changes
+
+Small safe title pass:
+- shows the current Highscore on the title screen
+- uses only supported 	ext layout nodes
+- keeps gameplay, graphics, collision, scoring, physics, and controls unchanged
