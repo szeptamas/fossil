@@ -107,3 +107,9 @@ Small safe inverted-bird pass:
 - keeps dark eye and wing details for contrast
 - uses only supported solid layout nodes
 - keeps title, Game Over, pipes, ground, collision, scoring, physics, and controls unchanged
+## v0.29 changes
+
+Small safe score panel pass:
+- moves the in-game Score panel slightly down from the circular display edge
+- keeps the inverted black panel / light text style
+- keeps title, Game Over, bird, pipes, ground, collision, scoring, physics, and controls unchanged
