@@ -4,7 +4,7 @@ return {
         timers: ['game_tick', 'crash_pause']
     },
     persist: {
-        version: 9,
+        version: 15,
         data: ['high_score']
     },
     config: {},
@@ -17,9 +17,9 @@ return {
     velocity: 0,
     gravity: 1,
     flap_velocity: -4,
-    pipe_width: 20,
-    pipe_lip_width: 26,
-    pipe_lip_height: 5,
+    pipe_width: 24,
+    pipe_lip_width: 36,
+    pipe_lip_height: 8,
     gap_height: 78,
     easy_gap_height: 92,
     min_gap_y: 42,
@@ -209,18 +209,29 @@ return {
         var lipX = Math.floor(pipe.x - Math.floor((this.pipe_lip_width - this.pipe_width) / 2))
 
         values[prefix + '_x'] = Math.floor(pipe.x)
+        values[prefix + '_body_inner_x'] = Math.floor(pipe.x + 1)
+        values[prefix + '_body_hi_x'] = Math.floor(pipe.x + 3)
+        values[prefix + '_body_shadow_x'] = Math.floor(pipe.x + this.pipe_width - 7)
+        values[prefix + '_body_right_x'] = Math.floor(pipe.x + this.pipe_width - 2)
+
         values[prefix + '_lip_x'] = lipX
+        values[prefix + '_lip_inner_x'] = Math.floor(lipX + 2)
+        values[prefix + '_lip_hi_x'] = Math.floor(lipX + 4)
+        values[prefix + '_lip_shadow_x'] = Math.floor(lipX + this.pipe_lip_width - 7)
+        values[prefix + '_lip_right_x'] = Math.floor(lipX + this.pipe_lip_width - 2)
 
         values[prefix + '_top_h'] = topHeight
         values[prefix + '_top_lip_y'] = Math.max(this.play_top, pipe.gap_y - this.pipe_lip_height)
+        values[prefix + '_top_lip_inner_y'] = values[prefix + '_top_lip_y'] + 1
         values[prefix + '_top_visible'] = horizontalVisible && topHeight > 0
-        values[prefix + '_top_lip_visible'] = horizontalVisible && topHeight > this.pipe_lip_height
+        values[prefix + '_top_lip_visible'] = horizontalVisible && topHeight > 0
 
         values[prefix + '_bottom_y'] = bottomY
         values[prefix + '_bottom_h'] = bottomHeight
         values[prefix + '_bottom_lip_y'] = bottomY
+        values[prefix + '_bottom_lip_inner_y'] = bottomY + 1
         values[prefix + '_bottom_visible'] = horizontalVisible && bottomHeight > 0
-        values[prefix + '_bottom_lip_visible'] = horizontalVisible && bottomHeight > this.pipe_lip_height
+        values[prefix + '_bottom_lip_visible'] = horizontalVisible && bottomHeight > 0
     },
 
     draw_game: function (response, full_update) {

@@ -2,31 +2,18 @@
 
 Flappy Bird-style Fossil Hybrid HR game.
 
-## v0.10 changes
+## v0.15 changes
 
-- first pipe pair is intentionally easy:
-  - starts farther away
-  - centered gap
-  - larger first gap
-- lower pipes now reach the floor line
-- upper pipes reach the ceiling line
-- pipe lips/caps return near the gap, but do not extend past floor/ceiling
-- bird has a small eye and animated wing
+Keeps the v0.14 fixes and adds visual fine-tuning to the pipes:
+
+- full-width lips/caps still stay visible on partial pipes
+- lip/cap is 2 px wider
+- inner white highlight is narrower and less dominant
+- right-side shadow is slightly stronger
+- overall pipe silhouette stays close to v13/v14, but reads more like the original Flappy Bird style
 
 ## Controls
 
 - top / middle / bottom short press: flap, start, restart
 - short press during crash pause: skip to Game Over
 - middle hold: exit
-
-## Simulator
-
-```powershell
-.\scripts\run-simulator.ps1 -AppPath .\apps\lion-flappy
-```
-
-## Build
-
-```powershell
-.\scripts\build-app.ps1 -App lion-flappy
-```
