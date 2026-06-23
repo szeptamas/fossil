@@ -26,3 +26,9 @@ Keeps the v0.14 fixes and adds visual fine-tuning to the pipes:
 - top / middle / bottom short press: flap, start, restart
 - short press during crash pause: skip to Game Over
 - middle hold: exit
+## v0.17 changes
+
+Small safe visual pass:
+- adds a scrolling wave-like ground detail
+- uses only supported solid layout nodes
+- keeps background, pipes, bird, labels, collision, scoring, physics, and controls unchanged
